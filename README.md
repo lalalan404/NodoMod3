@@ -7,6 +7,8 @@
   
 S1/
 │
+└── node_modules/ *necesario para ejecutar, no se incluyo  *
+│
 └── tp1/
 │    └── server.js
 └── tp2/
