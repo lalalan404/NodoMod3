@@ -8,21 +8,52 @@
 S1/
 │
 └── tp1/
-│   └── server.js
-└── tp2
-    │
-    └── path-ejemplo/ 
-    │   └── index.mjs
-    │
-    └── os-ejemplo/ 
-    │   └── index.mjs
-    │
-    └── fs-ejemplo/ 
-    │   └── index.mjs
-    │
-    └── events-ejemplo/ 
-    │   └── index.mjs
-    │
-    └── http-ejemplo/ 
-        └── index.mjs
+│    └── server.js
+└── tp2/
+│    │
+│    └── path-ejemplo/ 
+│    │   └── index.mjs
+│    │
+│    └── os-ejemplo/ 
+│    │   └── index.mjs
+│    │
+│    └── fs-ejemplo/ 
+│    │   └── index.mjs
+│    │
+│    └── events-ejemplo/ 
+│    │   └── index.mjs
+│    │
+│    └── http-ejemplo/ 
+│        └── index.mjs
+└── tp3/
+│    │
+│    │
+│    └── expres/ 
+│    │     └── server.mjs
+│    │     └── serverConsulta.mjs
+│    │
+│    └── superheroes/ 
+│         └── index.mjs
+│         └── utils.mjs
+└── tp4/
+│    │
+│    │
+│    └── ejemplo-mvc/ 
+│    │     └── controllers/
+│    │     └── models/
+│    │     └── repository/
+│    │     └── services/
+│    │     └── views/
+│    │     └── server.mjs
+│    │     └── tareas.txt
+│    │
+│    └── project-root/ 
+│         └── controllers/
+│         └── models/
+│         └── repository/
+│         └── services/
+│         └── views/
+│         └── server.mjs
+│         └── superheroes.txt
+
 
