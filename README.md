@@ -57,5 +57,12 @@ S1/
 │         └── views/
 │         └── server.mjs
 │         └── superheroes.txt
-
-
+│  
+│  
+│  
+S2/
+│
+└── node_modules/ *necesario para ejecutar, no se incluyo  *
+│
+└── tp2/
+│    └── app.js
