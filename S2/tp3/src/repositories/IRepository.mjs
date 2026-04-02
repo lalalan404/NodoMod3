@@ -14,3 +14,4 @@ class IRepository {
     throw new Error("Metodo obtenerMayoresDe30() no implementado");
   }
 }
+export default IRepository;
