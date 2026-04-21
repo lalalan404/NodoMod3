@@ -2,7 +2,7 @@ import {
   obtenerSuperheroePorId,
   obtenerTodosLosSuperheroes,
   buscarSuperheroesPorAtributo,
-  obtenerSuperheoresMayoresDe30,
+  obtenerSuperheroesMayoresDe30,
 } from "../services/superheroesService.mjs";
 import {
   renderizarSuperheroe,
@@ -47,7 +47,7 @@ export async function buscarSuperheroesPorAtributoController(req, res) {
     if (superheroes.length === 0) {
       return res
         .status(404)
-        .send({ mensaje: "no se encontrarojn superheroes con ese atributo" });
+        .send({ mensaje: "no se encontraron superheroes con ese atributo" });
     }
 
     const superheroesFormateados = renderizarListaSuperheroes(superheroes);

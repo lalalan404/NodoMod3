@@ -9,6 +9,6 @@ export async function obtenerTodosLosSuperheroes() {
 export async function buscarSuperheroesPorAtributo(atributo, valor) {
   return await superHeroRepository.buscarPorAtributo(atributo, valor);
 }
-export async function obtenerSuperheoresMayoresDe30() {
+export async function obtenerSuperheroesMayoresDe30() {
   return await superHeroRepository.obtenerMayoresDe30();
 }

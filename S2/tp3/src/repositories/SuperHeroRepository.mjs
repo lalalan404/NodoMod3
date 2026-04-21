@@ -10,10 +10,22 @@ class SuperHeroRepository extends IRepository {
     return await SuperHero.find({});
   }
   async buscarPorAtributo(atributo, valor) {
-    //RESOLVER
+    let query;
+
+    // Si el atributo es 'edad', hacemos búsqueda exacta de número
+    if (atributo === "edad") {
+      query = { [atributo]: Number(valor) };
+    } else {
+      // Si es texto, usamos la búsqueda flexible con Regex
+      query = { [atributo]: { $regex: valor, $options: "i" } };
+    }
+
+    return await SuperHero.find(query);
   }
+
   async obtenerMayoresDe30() {
-    //RESOLVER
+    // Solo filtra por edad, sin importar el planeta
+    return await SuperHero.find({ edad: { $gt: 30 } });
   }
 }
 export default new SuperHeroRepository();

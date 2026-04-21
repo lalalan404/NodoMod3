@@ -14,8 +14,9 @@ connectDB();
 //configuracion de rutas
 app.use("/api", superHeroRoutes);
 
-//bienvenida
+//bienvenida en la pagina principal
 app.get("/", (req, res) => {
+  res.send("¡Servidor funcionando correctamente!");
   res.send("¡Servidor funcionando correctamente!");
 });
 
@@ -24,5 +25,7 @@ app.use((req, res) => {
   res.status(404).send({ mensaje: "ruta no encontrada" });
 });
 app.listen(PORT, () => {
-  console.log(`servidor escuchando en el puerto ${PORT}`);
+  console.log(
+    `¡Servidor funcionando correctamente!"en http://localhost:${PORT}`,
+  );
 });

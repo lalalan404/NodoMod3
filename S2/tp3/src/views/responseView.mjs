@@ -1,7 +1,7 @@
 //capade vista organiada la presetacion de datos
 export function renderizarSuperheroe(superheroe) {
   return {
-    Nombre: superheroe.nombreSuperheroe,
+    Nombre: superheroe.nombreSuperHeroe,
     "Nombre Real": superheroe.nombreReal,
     Edad: superheroe.edad,
     "planeta de Origen": superheroe.planetaOrigen,
@@ -9,6 +9,8 @@ export function renderizarSuperheroe(superheroe) {
     Poderes: superheroe.poderes,
     Aliado: superheroe.aliados,
     Enemigos: superheroe.enemigos,
+    creador: superheroe.creador,
+    Id: superheroe.id,
   };
 }
 export function renderizarListaSuperheroes(superheroes) {
